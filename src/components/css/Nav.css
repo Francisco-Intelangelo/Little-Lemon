@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    margin-bottom: 41px;
+    margin: 20px 0 41px 0;
 }
 .logo {
     width: 200px;
@@ -33,9 +33,9 @@
     display: none;
 }
 @media(max-width: 900px){
-    .nav-container{
-        justify-content: space-between;
-    }
+   .nav-container{
+      justify-content: space-around;
+   }
     .anchor-container{
         display: none;
     }

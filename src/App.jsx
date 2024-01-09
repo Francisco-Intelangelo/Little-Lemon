@@ -5,12 +5,10 @@ import { Index } from './pages/Index'
 
 function App() {
    return (
-      <>
-         <Routes>
-            <Route path='/' element={<Index/>}/>
-            <Route path="/booking" element={<BookingPage/>}/>
-         </Routes>
-      </>
+      <Routes>
+         <Route path='/' element={<Index/>}/>
+         <Route path="/booking" element={<BookingPage/>}/>
+      </Routes>
    )
 }
 

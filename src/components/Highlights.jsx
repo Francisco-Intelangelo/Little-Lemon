@@ -33,7 +33,7 @@ export const Highlights = () => {
          </div>
          <div style={{width: 200, height: 61, left: 660, top: 0, position: 'absolute'}}>
         <div style={{width: 200, height: 61, left: 0, top: 0, position: 'absolute', background: '#F4CE14', borderRadius: 12}} />
-        <div style={{width: 136, height: 25.82, left: 32, top: 17.89, position: 'absolute', textAlign: 'center', color: 'black', fontSize: 20, fontFamily: 'Karla', fontWeight: '700', textTransform: 'capitalize', wordWrap: 'break-word'}}>Online Menu</div>
+        <div style={{width: 136, height: 25.82, left: 32, top: 17.89, position: 'absolute', textAlign: 'center', color: 'black', fontSize: 20, fontFamily: 'Karla', fontWeight: '700'}}>online menu</div>
          </div>
       </main>
    )
