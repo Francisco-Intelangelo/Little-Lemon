@@ -30,7 +30,7 @@
 .subtitle-main{
    position: absolute;
    top: 85px;
-   color: white;
+   color: #fff;
    font-size: 41.13px;
    font-family: Markazi Text;
    font-weight: 400;
@@ -42,6 +42,7 @@
    position: absolute;
    top: 148px;
    max-width: 215px;
+   color: #fff;
    margin: 0;
    font-family: 'Karla';
 }
@@ -54,6 +55,7 @@
    font-weight: 700;
    position: absolute;
    padding: 17px 21px;
+   border: none;
    border-radius: 12px;
    cursor: pointer;
 }
@@ -73,28 +75,28 @@
 }
 @media(max-width: 600px){
    .background{
-      height: 186px;
+      height: 230px;
    }
    .main-container{
       margin: 0 20px;
    }
    .title-main{
       top: 8px;
-      font-size: 33.12px;
+      font-size: 40px;
    }
    .subtitle-main{
-      top: 42.5px;
-      font-size: 20.6px;
+      top: 50px;
+      font-size: 25px;
    }
    .context{
-      top: 74px;
-      max-width: 107.5px;
-      font-size: .5em;
+      top: 90px;
+      max-width: 162px;
+      font-size: 12px;
    }
    .btn-reserve{
+      top: 190px;
       font-size: 10px;
       padding: 8.5px 10.5px;
-      top: 145px;
       border-radius: 6px;
    }
    .img-main{

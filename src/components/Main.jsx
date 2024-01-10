@@ -9,7 +9,7 @@ export const Main = () =>{
                <h1 className="title-main">Little Lemon</h1>
                <h2 className="subtitle-main">Chicago</h2>
                <p className="context">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-               <bottom className="btn-reserve">Reserve a Table</bottom>
+               <button className="btn-reserve">Reserve a Table</button>
             </section>
             <img 
                src={restaurantfood}
