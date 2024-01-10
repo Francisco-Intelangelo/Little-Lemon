@@ -1,27 +1,27 @@
 .nav-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin: 20px 0 41px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
+   margin: 15px 0 41px 0;
 }
 .logo {
-    width: 200px;
-    padding: 0;
-    will-change: filter;
-    transition: filter 300ms;
+   width: 200px;
+   padding: 0;
+   will-change: filter;
+   transition: filter 300ms;
 }
 .logo:hover {
-    filter: drop-shadow(0 0 .07em #ffff64aa);
+   filter: drop-shadow(0 0 .07em #ffff64aa);
 }
 .logo.react:hover {
-    filter: drop-shadow(0 0 .07em #c8fb61aa);
+   filter: drop-shadow(0 0 .07em #c8fb61aa);
 }
 .anchor-container{
-    display: flex;
-    gap: 1em;
-    margin: 0;
-    padding: 0;
+   display: flex;
+   gap: 1em;
+   margin: 0;
+   padding: 0;
 }
 .link{
    color: #ffffffde;
@@ -30,29 +30,32 @@
    font-size: 18.66px;
 }
 .menu{
-    display: none;
+   display: none;
 }
-@media(max-width: 900px){
+@media(max-width: 825px){
    .nav-container{
-      justify-content: space-around;
+      justify-content: space-between;
+      width: 100vw;
    }
-    .anchor-container{
-        display: none;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 2em;
-        height: 1.5em;
-        cursor: pointer;
-        margin: 0;
-        padding: 0;
-    }
-    .menu span{
-        background-color: #000;
-        height: .4em;
-        width: 100%;
-        border-radius: 1em;
-    }
+   .logo{
+      margin-left: 20px;
+   }
+   .anchor-container{
+      display: none;
+   }
+   .menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 25px;
+      cursor: pointer;
+      margin-right: 20px;
+      padding: 0;
+   }
+   .menu span{
+      background-color: #000;
+      height: 6px;
+      width: 35px;
+      border-radius: 1em;
+   }
 }

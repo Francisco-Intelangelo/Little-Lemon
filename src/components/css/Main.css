@@ -8,8 +8,6 @@
 .main-container{
    display: flex;
    height: 372px;
-   width: 100%;
-   max-width: 1366px;
    align-items: center;
    position: relative;
 }
@@ -46,7 +44,6 @@
    max-width: 215px;
    margin: 0;
    font-family: 'Karla';
-
 }
 .btn-reserve{
    background-color: #F4CE14;
@@ -68,4 +65,40 @@
    position: absolute;
    top: 33px;
    right: 0;
+}
+@media(max-width: 825px){
+   .main-container{
+      margin: 0 20px;
+   }
+}
+@media(max-width: 600px){
+   .background{
+      height: 186px;
+   }
+   .main-container{
+      margin: 0 20px;
+   }
+   .title-main{
+      top: 8px;
+      font-size: 33.12px;
+   }
+   .subtitle-main{
+      top: 42.5px;
+      font-size: 20.6px;
+   }
+   .context{
+      top: 74px;
+      max-width: 107.5px;
+      font-size: .5em;
+   }
+   .btn-reserve{
+      font-size: 10px;
+      padding: 8.5px 10.5px;
+      top: 145px;
+      border-radius: 6px;
+   }
+   .img-main{
+      width: 120px;
+      height: auto;
+   }
 }

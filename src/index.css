@@ -14,7 +14,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+::-webkit-scrollbar{
+   width: 12px;
+}
+::-webkit-scrollbar-track{
+   border-radius: 12px;
+   background: #69887d;
+}
+::-webkit-scrollbar-thumb{
+   background: #495E57;
+   border-radius: 12px;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -29,7 +39,6 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
