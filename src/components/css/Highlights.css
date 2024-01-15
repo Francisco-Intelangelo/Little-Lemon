@@ -1,20 +1,49 @@
+.specials-main{
+   margin-top: 80px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.specials-section{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
 .section-cards{
    display: flex;
    justify-content: space-between;
 }
 .content-card{
    width: 240px;
-   height: auto;
+   height: 420px;
    position: relative;
    background-color: #C8C8C880;
    border-radius: 20px;
    border: 1px solid #ffffff;
 }
 .title-section{
-   
+   font-size: 43px;
+   margin: 0;
+   display: inline;
+   font-family: 'Markazi Text';
+   color: #ffffff;
 }
-.content-card{
-
+.button-section{
+   display: inline;
+   width: 186px;
+   height: 57px;
+   text-align: center;
+   background-color: #F4CE14;
+   color: #000;
+   font-family: 'Karla';
+   font-size: 20px;
+   font-weight: 700;
+   padding: 17px 21px;
+   border: none;
+   border-radius: 12px;
+   cursor: pointer;
 }
 .image-card{
    width: 100%;
@@ -22,35 +51,52 @@
    border-radius: 20px 20px 0 0;
 }
 .text-card{
-   width: 100%;
+   width: 90%;
+   height: 226px;
+   margin-left: 10px;
 }
 .title{
    font-size: 26px;
+   display: inline;
    font-family: 'Markazi Text';
    font-weight: 500;
    color: #000;
 }
 .price{
+   position: absolute;
+   top: 177px;
+   right: 20px;
    color: #FF8A00;
    font-size: 14.26px;
    font-family: 'Inter';
    font-weight: 500;
 }
 .description{
-   color: #495E57;
-   font-size: 16.33;
+   margin: 10px 0 0 0;
+   color: #121715;
+   font-size: 14px;
    font-family: 'Karla';
-   font-weight: '500';
+   font-weight: 400;
 }
 .delivery{
    color: 'black';
-   font-size: 16.33;
+   position: absolute;
+   bottom: 20px;
+   font-size: 16.33px;
+   background: none;
+   border: none;
    font-family: 'Karla';
-   font-weight: '500';
+   font-weight: 700;
+}
+.logo-delivery{
+   position: absolute;
+   bottom: 20px;
+   right: 70px;
+   width: 20px;
 }
 @media(max-width: 825px){
-   .section-cards{
-      margin: 0 20px;
+   .specials-main{
+      margin: 80px 20px 0 20px;
    }
 }
 @media(max-width: 775px){
@@ -61,5 +107,16 @@
    .content-card{
       margin: 10px 0;
    }
-
+}
+@media(max-width: 600px){
+   .title-section{
+      font-size: 32px;
+   }
+   .button-section{
+      width: 93.34px;
+      height: 29px;
+      font-size: 10px;
+      padding: 8.5px 10.5px;
+      border-radius: 6px;
+   }
 }

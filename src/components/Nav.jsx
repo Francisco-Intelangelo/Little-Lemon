@@ -12,7 +12,7 @@ export const Nav = () => {
             <NavLink className="link" to="/">Menu</NavLink>
             <NavLink className="link" to="/">Reservations</NavLink>
             <NavLink className="link" to="/">Order Online</NavLink>
-            <NavLink className="link" to="/booking">Log In</NavLink>
+            <NavLink className="link" to="/">Log In</NavLink>
          </ul>
          <ul className="menu">
             <span></span>

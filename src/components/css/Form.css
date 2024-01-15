@@ -1,27 +1,26 @@
 .form-container{
    display: flex;
+   height: 100vh;
+   justify-content: center;
    flex-direction: column;
    align-items: center;
-   background-color: rgb(85, 85, 85);
    gap: 2rem;
-   border-top-right-radius: 50px;
-   border-bottom-left-radius: 30px;
 }
 .booking-form{
    display: grid;
    place-items: center;
-   max-width: 350px;
    padding: 1em;
-   gap: .8rem;
+   gap: 2rem;
 }
 .label-booking{
-   font-size: 1.8em;
+   font-size: 40px;
+   color: #ffffffde;
    font-weight: 500;
    cursor: pointer;
 }
 .input-booking{
    text-align: center;
-   font-size: .8em;
+   font-size: 15px;
    border-radius: .5em;
    padding: .25em .9em;
    cursor: pointer;
@@ -30,18 +29,23 @@
 .confirm-reservation{
    border-radius: .5em;
    font-size: 1.3em;
-   border: 1px solid #000;
+   border: none;
    padding: .2em 1em;
-   color: #ffffffde;
+   color: #000;
+   font-family: 'Karla';
+   font-weight: 600;
    margin-top: 20px;
    cursor: pointer;
-   background: none;
+   background: #f4ce14;
 }
 .cancel{
    font-size: 1em;
    border-radius: .5em;
-   color: #ffffffde;
-   border: 1px solid #000;
+   font-family: 'Karla';
+   font-weight: 600;
+   color: #000;
+   border: none;
+   background: #f4ce14;
    margin-bottom: 20px;
    padding: .2em 1em;
 }
