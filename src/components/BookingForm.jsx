@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom"
 
 
 export const BookingForm = () => {
+   const actualDate = new Date()
    const [form, setForm] = useState({
       date: "",
       time: "",
@@ -20,6 +21,7 @@ export const BookingForm = () => {
                <input 
                   className="input-booking"
                   type="date"
+                  min={actualDate}
                   id="res-date"
                   required
                   value={form.date}

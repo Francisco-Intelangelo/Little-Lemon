@@ -22,7 +22,6 @@
    font-family: Markazi Text;
    font-weight: 600;
    text-transform: capitalize;
-   word-wrap: break-word;
    top: 19px;
    position: absolute;
    margin: 0;
@@ -35,7 +34,6 @@
    font-family: Markazi Text;
    font-weight: 400;
    text-transform: capitalize;
-   word-wrap: break-word;
    margin: 0;
 }
 .context{

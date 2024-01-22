@@ -19,7 +19,7 @@
    width: 240px;
    height: 420px;
    position: relative;
-   background-color: #C8C8C880;
+   background-color: #f6f6f680;
    border-radius: 20px;
    border: 1px solid #ffffff;
 }
@@ -76,7 +76,7 @@
    color: #121715;
    font-size: 14px;
    font-family: 'Karla';
-   font-weight: 400;
+   font-weight: 500;
 }
 .delivery{
    color: 'black';

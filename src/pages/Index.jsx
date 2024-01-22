@@ -1,7 +1,9 @@
 import { Nav } from "../components/Nav"
 import { Main } from "../components/Main"
 import { SpecialsList } from "../components/SpecialsList"
-// import { Footer } from "../components/Footer"
+import { Testimonials } from "../components/Testimonials"
+import { About } from "../components/About"
+import { Footer } from "../components/Footer"
 
 
 export const Index = () => {
@@ -10,7 +12,9 @@ export const Index = () => {
          <Nav/>
          <Main/>
          <SpecialsList/>
-         {/*<Footer/> */}
+         <Testimonials/>
+         <About/>
+         <Footer/>
       </main>
    )
 }
