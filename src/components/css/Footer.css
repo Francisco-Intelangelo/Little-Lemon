@@ -1,5 +1,17 @@
-h3{
+.footer{
    margin-top: 80px;
-   font-size: 50px;
+   display: flex;
+   justify-content: space-between;
+}
+.logo-footer{
+   width: 180px;
+}
+.column{
    color: #fff;
+   list-style: none;
+   font-family: 'Karla';
+   line-height: 2;
+}
+.bold-footer{
+   font-weight: 700;
 }

@@ -38,8 +38,7 @@ export const Testimonials = () => {
    return(
       <section style={{display:'flex', flexDirection:'column', alignItems:'center', marginTop:'80px'}}>
          <h2 className="testimonials-title" style={{color:'#fff', fontSize:'43px', margin:'0'}}>Testimonials</h2>
-         <section>
-            <article style={{display:'flex'}}>
+            <article style={{display:'flex', width:'100%',justifyContent:'space-between'}}>
             {people.map((person) => (
                <TestimonialCard 
                   key={person.id}
@@ -50,7 +49,6 @@ export const Testimonials = () => {
                />
             ))}
             </article>
-         </section>
       </section>
    )
 }
