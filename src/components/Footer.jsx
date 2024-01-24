@@ -3,7 +3,7 @@ import "../components/css/Footer.css"
 export const Footer = () =>{
    return(
       <section className="footer">
-         <img className="logo-footer" src={logo} alt="Logo little lemon restaurant"/>
+         <img className="logo-footer" src={logo} alt="Logo little lemon restaurant" loading="lazy"/>
          <ul className="column">
             <li className="bold-footer">Doormat</li>
             <li>Navigation</li>

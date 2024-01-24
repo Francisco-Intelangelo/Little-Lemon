@@ -3,25 +3,34 @@ import "./css/Form.css"
 import { NavLink } from "react-router-dom"
 
 
-export const BookingForm = () => {
-   const actualDate = new Date()
+// eslint-disable-next-line react/prop-types
+export const BookingForm = ({avaibleTimes, updateTimes}) => {
    const [form, setForm] = useState({
       date: "",
       time: "",
       guests: "",
       occasion: "",
    });
+
+   const handleTimeChange = (newTimes) => {
+      updateTimes(newTimes)
+   }
+   const guestsNumber = ["1 - 3", "4 - 6", "7 - 9", "+10"]
+
    const handleAlert = () => {
-      alert("Reservation Confirmed!!");
+      if(form.date === '' && form.time === '' && form.guests === ''){
+         alert("Complete the fields")
+      }else{
+         alert("Reservation Confirmed!!");
+      }
    }
    return(
       <section className="form-container">
-         <form className="booking-form">
+         <form className="booking-form" id="form-id">
             <label className="label-booking" htmlFor="res-date">Choose date</label>
                <input 
                   className="input-booking"
                   type="date"
-                  min={actualDate}
                   id="res-date"
                   required
                   value={form.date}
@@ -46,12 +55,9 @@ export const BookingForm = () => {
                   }}
                   >
                   <option value="">--Please choose an option--</option>
-                  <option>17:00</option>
-                  <option>18:00</option>
-                  <option>19:00</option>
-                  <option>20:00</option>
-                  <option>21:00</option>
-                  <option>22:00</option>
+                  {avaibleTimes.map((index, time) => (
+                     <option key={index} value={time} onChange={handleTimeChange}>{time}</option>
+                  ))}
                </select>
             <label className="label-booking" htmlFor="guests">Number of guests</label>
                <select 
@@ -67,10 +73,9 @@ export const BookingForm = () => {
                   }}
                   >
                   <option value="">--Please choose an option--</option>
-                  <option>1 - 3</option>
-                  <option>4 - 6</option>
-                  <option>7 - 9</option>
-                  <option>+10</option>
+                  {guestsNumber.map((guest, index) => (
+                     <option key={index} value={guest}>{guest}</option>
+                  ))}
                </select>
             <label className="label-booking" htmlFor="occasion">Occasion</label>
                <select 
@@ -88,12 +93,9 @@ export const BookingForm = () => {
                   <option>Birthday</option>
                   <option>Anniversary</option>
                </select>
-            <input 
-               className="confirm-reservation"
-               type="submit"
-               value="Make Your reservation"
-               onClick={handleAlert}
-               />
+            <button className="confirm-reservation" type="submit" onClick={handleAlert}>
+               Make your reservation
+            </button>
          </form>
          <NavLink className="cancel" to="/">Back</NavLink>
       </section>
